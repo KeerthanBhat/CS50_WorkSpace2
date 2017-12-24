@@ -1,0 +1,25 @@
+0.  It is the longest word in the English language published in a dictionary. 
+    The Oxford English Dictionary defines it as "an artificial long word said to mean a lung disease caused by inhaling 
+    very fine ash and sand dust."
+
+1.  getrusage() returns resource usage measures for either SELF or CHILDREN or THREAD.
+
+2.  16 members are there in a variable of type struct rusage.
+
+3.  We pass before and after by reference (instead of by value) to calculate because they are of the data type structures and
+    it is convenient to structures by their address which saves a lot of memory and time.
+
+4.  In the main function, after checking for the correct usage of arguments and deciding the dictionary file, we load it into 
+    the memory and open up the text file. In the for loop where the words are checked for misspelling, characters from the text 
+    the text file are accessed one by one until EOF. These characters are checked if they are alphabets or apostrophe and stored
+    in the array called word. When index exceeds length viz, 45 the remainder of that string will be passed off using while 
+    loop. Same is the case when a digit is encountered. If none of these cases are true, then the word would have ended. 
+    Therefore we increment the word count and check the word with dictionary words using check() function. If not found in the 
+    dictionary, then the word is printed and count of mispelled words is incremented. Then index is set to 0 again to prepare 
+    for the next word and the process continues.
+    
+5.  We have used fgetc to read each word’s characters one at a time rather than use fscanf since we want to check each character
+    and deem integers and other punctuations as invalid.
+
+6.  The parameters for check and load are loaded as const because once they are accessed in the program, they should not be 
+    changed again. They should be constant throughout the function execution. 

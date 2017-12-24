@@ -1,0 +1,12 @@
+1.  The header file 'stdint.h' contains the definitions of several new integer types to enhance the portability of programs.
+2.  The point of using uint8_t, uint32_t, int32_t, and uint16_t in a program is to define new integer types as per the requirements.
+3.  BYTE is 8-bytes unsigned, a DWORD is 32-bytes unsigned, a LONG is 32-bytes signed, and a WORD is 16-bytes unsigned.
+4.  The first two bytes of any BMP file must be in hexa-decimal.
+5.  bfSize is the size of Bitmapfileheader whereas biSize is the size of Bitmapinfoheader.
+6.  If biHeight is negative, the bitmap is a top-down DIB and its origin is the upper-left corner.
+7.  biBitCount in BITMAPINFOHEADER specifies the BMP’s color depth.
+8.  fopen might return NULL in copy.c if the infile or the output doesn't exist on the disk.
+9.  The third argument to fread is always 1 in your code because you are copying only one structure at a time.
+10. 3 is the value assigned to padding if bi.biWidth is 3.
+11. fseek moves the file pointer inside the file wherever the programmer wants it to.
+12. SEEK_CUR returns the current position of the file position indicator. 
